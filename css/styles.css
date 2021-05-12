@@ -96,3 +96,15 @@ h2{
 	display:flex;
 	justify-content:center;
 }
+/*                   FOOTER CSS                   */
+#top_footer{
+        position:absolute;
+	width:100%;
+	background-color:var(--main-color);
+	height:100px;
+}
+#bottom_footer{
+	width:100%;
+	background-color:var(--primary-color);
+	height:100px;
+}

@@ -8,6 +8,7 @@ $db_pass = "password123";
 $host_name = "http://xill.tk";
 
 $db_table = "articles";
+echo "<div id='page'>";
     if(isset($_GET["id"])){//une page à été choisi
         $id = $_GET["id"];
     }
@@ -38,7 +39,7 @@ $db_table = "articles";
         while ($articles = $t->fetch()) {
             if($id == $articles['id'])
                 $active_point = "class='active'";
-            echo "<a href='index.php?id={$articles['id']}' {$active_point}>{$articles['title']}</a>";
+            echo "<a href='#' onclick=\"return loadPage('index.php?id={$articles['id']}&header=off')\" {$active_point}>{$articles['title']}</a>";
             $active_point = "class='not_active'";
         }
         echo "</nav>";
@@ -52,14 +53,12 @@ $db_table = "articles";
         while ($articles = $t->fetch()) {
             if($id == $articles['id'])
                 $active_point = "class='active'";
-            echo "<a href='index.php?id={$articles['id']}' {$active_point}></a>";
+            echo "<a href='#' onclick=\"return loadPage('index.php?id={$articles['id']}&header=off')\" {$active_point}></a>";
             $active_point = "class='not_active'";
         }
         echo "</nav>";
         echo "<div id='aroundmenu'></div>";
         echo "</div></div>";
     
-    
+    echo "</div>";
 ?>
-
-</body>

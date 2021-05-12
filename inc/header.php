@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/polices.css">
+    <script src="ajax.js"></script>
     <title>Maxime Fleury - Portfolio</title>
 </head>
 <body>
