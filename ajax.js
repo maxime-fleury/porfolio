@@ -1,7 +1,9 @@
 function loadPage(page) {
 	loadXMLDoc(page);
+    desactivate(page);
 	return false;
 }
+
 function loadXMLDoc(page) {
     var xmlhttp = new XMLHttpRequest();
 
@@ -21,4 +23,15 @@ function loadXMLDoc(page) {
 
     xmlhttp.open("GET", page, true);
     xmlhttp.send();
+}
+function desactivate(page){
+    //enlève la classe active lors d'un changement de page (car pas de rechargement du menu à gauche)
+    
+    var x = document.querySelector(".active");
+    if(('index.php?id=1&amp;header=off' != page) && (x != undefined)){
+        x.classList.remove('active');
+        x.classList.add('not_active');
+    }
+
+
 }

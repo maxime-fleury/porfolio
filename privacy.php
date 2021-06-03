@@ -18,6 +18,6 @@
     <title>Maxime Fleury - Portfolio</title>
 </head>
 <body>
-    <header> <div id="top_header"></div><div id="bottom_header"></div> <h1 id='title'> <span class="letter">M</span><span class="letter">a</span><span class="letter">x</span><span class="letter">i</span><span class="letter">m</span><span class="letter">e</span><span class="letter"> </span><span class="letter">F</span><span class="letter">l</span><span class="letter">e</span><span class="letter">u</span><span class="letter">r</span><span class="letter">y</span>
- </h1></header>
-    <img id='burger' alt='menuburger' src='menuburger.png'/>
+ <h6>
+Nous ne collectons, aucune donnée personnelle.<br>
+Nous ne partageons, aucune donnée personnelle.<br></h6>

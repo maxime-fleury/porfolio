@@ -1,0 +1,116 @@
+@media (max-width: 740px) { 
+    #title{
+        margin-top:-100px;
+        margin-left: 25%;
+        font-size:36px;
+    }
+    #cap{
+        flex-direction: column;
+    }
+    h2{
+        margin-top:100px;
+        margin-left:50px;
+        color:var(--primary-color);
+            font-size:26px;
+    }
+    #article_content{
+        margin-left:50px;
+        height: 500px;
+    }
+    #menubar{
+        width:150px;
+        margin-left:-18%;
+    }
+    #left_menu{
+        display:none;
+    }
+    #burger{
+        display:block;
+    }
+    #card_container{
+        margin-left:-50px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input[type=submit]{
+        position:relative;
+        margin-top:0;
+    }
+    #input_captcha{
+        width:50%;
+    }
+ }
+ @media (min-width: 920px) { 
+    .minature_img:hover, .minature_img:focus{
+        width: 80vw;
+        position: absolute;
+        top:5%;
+        left:5%;
+        z-index:1000;
+        border:solid 3px var(--complementary);
+
+}
+.minature_img:hover::before, .minature_img:focus::before {
+    content: " ";
+    width: 80vw;
+    position:absolute;
+    z-index: 999;
+    top:5%;
+    left:5%;
+    border:solid 500px rgba(39, 25, 25, 0.534);
+}
+
+
+ }
+ @media (max-width: 541px) { 
+
+    #title{
+        margin-top:-90px;
+        margin-left: 25%;
+        font-size:28px;
+    }
+    #article_title{
+        margin-top:75px;
+    }
+    h2{
+        font-size:24px;
+    }
+    textarea{
+        width: 75%;
+        height:120px;
+    }
+    input[type=text],input[type=email],#input_captcha   {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    #menubar{
+        margin-top: 5px;
+        width: 150px;
+        margin-left: -10%;
+    }
+    #bottom_header,#top_header{
+        height:65px;
+    }
+
+    #icons_footer{
+        right:30px;
+    }
+    #icons_footer i{
+        text-shadow: -1px 0 var(--main-color), 0 1px  var(--main-color), 1px 0  var(--main-color), 0 -1px  var(--main-color);
+        color:white;
+    }
+
+ }
+ @media (max-height: 440px) { 
+
+    #icons_footer{
+        position:fixed;
+        bottom:0px;
+        right:100px;
+        background: var(--main-color);
+    }
+
+ }

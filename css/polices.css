@@ -4,8 +4,8 @@ body{
 #article_title{
          font-family: "M PLUS ROUNDED 1C", bold;
 }
-#article_content{
-  font-family: "Saria", bold;
+#article_content, input, textarea{
+  font-family: "Saira", bold;
 }
 #left_menu{
    font-family: "M PLUS ROUNDED 1C", bold;
